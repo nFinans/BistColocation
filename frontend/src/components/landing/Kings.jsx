@@ -65,7 +65,7 @@ export default function Kings({ onCheckout }) {
             data-testid="kings-cta"
             className="cta-shine btn-primary mt-10"
           >
-            Şimdi Başvur <ChevronRight className="w-5 h-5" />
+            ŞİMDİ BAŞVUR <ChevronRight className="w-5 h-5" />
           </button>
         </div>
 

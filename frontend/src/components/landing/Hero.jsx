@@ -80,7 +80,7 @@ export default function Hero({ onCheckout }) {
             <ChevronRight className="w-5 h-5" />
           </button>
           <a href="#krallar" data-testid="hero-cta-secondary" className="btn-ghost">
-            Performansı Gör
+            PERFORMANSI GÖR
           </a>
         </div>
 

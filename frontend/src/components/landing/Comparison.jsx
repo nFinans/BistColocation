@@ -120,7 +120,7 @@ export default function Comparison({ onCheckout }) {
             data-testid="comparison-cta"
             className="cta-shine btn-gold mt-8 w-full justify-center"
           >
-            Makinemi Hazırla <ChevronRight className="w-5 h-5" />
+            MAKİNEMİ HAZIRLA <ChevronRight className="w-5 h-5" />
           </button>
         </div>
       </div>

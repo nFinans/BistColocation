@@ -55,7 +55,7 @@ export default function CTASection({ onCheckout }) {
             className="btn-ghost"
           >
             <MessageCircle className="w-5 h-5" style={{ color: "#a3e635" }} />
-            WhatsApp ile Destek
+            WHATSAPP İLE DESTEK
           </a>
         </div>
       </div>

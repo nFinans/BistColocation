@@ -64,8 +64,10 @@ body {
 .btn-primary {
   background: linear-gradient(135deg, var(--lime) 0%, var(--emerald) 100%);
   color: var(--bg-0);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-weight: 800;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   border-radius: 14px;
   padding: 14px 24px;
   display: inline-flex;
@@ -79,7 +81,10 @@ body {
 .btn-gold {
   background: linear-gradient(135deg, #f5c518 0%, #facc15 100%);
   color: var(--bg-0);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   border-radius: 14px;
   padding: 14px 24px;
   display: inline-flex;
@@ -98,7 +103,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-weight: 600;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   transition: border-color .2s ease, color .2s ease;
 }
 .btn-ghost:hover { border-color: var(--lime); color: #fff; }
