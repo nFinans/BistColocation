@@ -38,20 +38,10 @@ export default function Terminal() {
           }}
         >
           <img
-            src="https://www.privyalgo.com/wp-content/uploads/2026/04/Darkpool_Bist-scaled.png"
+            src="/terminal.png"
             alt="Privy Algo Terminal"
             className="w-full object-cover block"
-            onError={(e) => {
-              e.currentTarget.style.display = "none";
-              e.currentTarget.nextElementSibling.style.display = "flex";
-            }}
           />
-          <div
-            className="hidden items-center justify-center bg-[#0b0e14] text-[#6b7080] font-mono text-xs"
-            style={{ minHeight: 360 }}
-          >
-            <span>Terminal görseli — privyalgo.com</span>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-4 mt-8">

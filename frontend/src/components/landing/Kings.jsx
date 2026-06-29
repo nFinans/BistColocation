@@ -77,20 +77,10 @@ export default function Kings({ onCheckout }) {
           }}
         >
           <img
-            src="https://www.privyalgo.com/wp-content/uploads/2026/04/algo_kings10.png"
+            src="/algo-kings.png"
             alt="Algoritma Performans Tablosu"
             className="w-full object-cover block"
-            onError={(e) => {
-              e.currentTarget.style.display = "none";
-              e.currentTarget.nextElementSibling.style.display = "flex";
-            }}
           />
-          <div
-            className="hidden items-center justify-center bg-[#0b0e14] text-[#6b7080] font-mono text-xs"
-            style={{ minHeight: 360 }}
-          >
-            <span>Algo Kings · performans</span>
-          </div>
         </div>
       </div>
     </section>
