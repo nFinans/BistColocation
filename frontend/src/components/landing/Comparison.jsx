@@ -5,7 +5,7 @@ const PROBLEMS = [
   {
     icon: Activity,
     title: "Gecikmeli Veri Tuzağı",
-    body: "İndikatörler fiyat tutuştuktan sonra yanar. Privy ile henüz emir defterindeki yoğunluğu görün.",
+    body: "İndikatörler fiyat hareketleri oluştuktan sonra sinyal verir. Privy ile henüz emir defterindeki yoğunluğu görün.",
   },
   {
     icon: Shield,
@@ -15,7 +15,7 @@ const PROBLEMS = [
   {
     icon: Server,
     title: "İletim Gecikmesi",
-    body: "Normal emir iletim ve veri işleme hızları kâr marjını eritir; her milisaniye kayıptır.",
+    body: "Normal emir iletim ve veri işleme hızları kâr marjlarınızı eritebilir; her milisaniye kayıptır.",
   },
 ];
 
@@ -33,7 +33,7 @@ const ADVANTAGES = [
   {
     icon: Zap,
     title: "0ms Uygulama",
-    body: "Borsalara en yakın özel sunucularda mikrosaniye seviyesinde işlem.",
+    body: "Borsalara en yakın özel sunucularda mikrosaniye seviyesinde veri analizi ve işlem.",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function Comparison({ onCheckout }) {
             className="absolute -top-3 -right-3 px-3 py-1.5 rounded-xl font-black rotate-3 text-xs font-mono tracking-wider"
             style={{ background: "#facc15", color: "#07080b" }}
           >
-            HFT ÇÖZÜMLERİ
+            HFT YAZILIM ÇÖZÜMLERİ
           </div>
           <div className="flex items-center gap-3 mb-6">
             <span className="text-[10px] font-mono tracking-widest text-[#a3e635]">
@@ -94,7 +94,7 @@ export default function Comparison({ onCheckout }) {
             <span className="h-px flex-1 bg-[#1e2233]" />
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 leading-tight">
-            Privy Co-Location Makinesi{" "}
+            Privy Co-Location Makinesi Yazılımı{" "}
             <span style={{ color: "#a3e635" }}>avantajı</span>.
           </h2>
           <div className="space-y-4">
@@ -120,7 +120,7 @@ export default function Comparison({ onCheckout }) {
             data-testid="comparison-cta"
             className="cta-shine btn-gold mt-8 w-full justify-center"
           >
-            MAKİNEMİ HAZIRLA <ChevronRight className="w-5 h-5" />
+            MAKİNEMİ VE YAZILIMI HAZIRLA <ChevronRight className="w-5 h-5" />
           </button>
         </div>
       </div>
