@@ -25,7 +25,7 @@ export default function Terminal() {
           </h2>
           <p className="mt-5 text-[#a0a4b0] max-w-2xl mx-auto text-lg">
             Geleneksel grafiklerin ötesine geçin. Privy Algo, emir akışını ve
-            likiditeyi analiz ederek piyasanın gerçek yönünü gösterir.
+            likiditeyi milisaniye hızında analiz ederek piyasanın gerçek niyetini emir akışlarını analiz ederek gösterir.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function Terminal() {
         >
           <img
             src="/terminal.png"
-            alt="Privy Algo Terminal"
+            alt="Privy Algo Web Terminal & Co-Location Yazılımı"
             className="w-full object-cover block"
           />
         </div>
@@ -48,7 +48,7 @@ export default function Terminal() {
           <FeatCard
             title="Net Sinyaller (AL / SAT)"
             color="#a3e635"
-            body="Karmaşık veriler süzülerek aksiyona dönüştürülebilen net işlem sinyallerine çevrilir."
+            body="Karmaşık veriler süzülerek aksiyona dönüştürülebilen net algoritmik sinyallere çevrilir."
           />
           <FeatCard
             title="Market Score & Momentum"
@@ -56,9 +56,9 @@ export default function Terminal() {
             body="Saniyeler içinde güncellenen alış / satış baskısı odaklı kuantitatif skorlar."
           />
           <FeatCard
-            title="Gerçek Fiyat Tespiti"
+            title="Gerçek Fiyat ve Momentum Tespiti"
             color="#10b981"
-            body="AVG Price ile Real Price arasındaki uyumsuzluğu yakalayıp trend kırılımlarını önceden haber verir."
+            body="AVG Price ile Real Price trend ile momentum arasındaki uyumsuzluğu yakalayıp trend kırılımlarını önceden haber verir."
           />
         </div>
       </div>
