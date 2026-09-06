@@ -27,9 +27,9 @@ export default function CTASection({ onCheckout }) {
         />
 
         <p className="text-[#a0a4b0] italic mb-6 max-w-2xl mx-auto">
-          "Bizim işimiz, belirsizliği yönetilebilir ve kazançlı stratejilere
-          çevirmektir. Privy Co-Location Makinesi ile artık masadaki oyunu
-          yöneten siz olacaksınız." — nFinans
+          "Bizim işimiz, finansal verileri yönetilebilir ve kazançlı stratejilere
+          çevirmektir. Privy Co-Location Makinesi ile artık veri analizini
+          ve hızını kurumsal ve üst seviyelere taşıyın!" — nFinans
         </p>
         <h2 className="text-3xl sm:text-5xl font-black text-white leading-tight mb-4">
           Uzman ekip, <span style={{ color: "#facc15" }}>kurumsal kalite</span>.
