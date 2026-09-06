@@ -1,7 +1,7 @@
 import React from "react";
 
 const WHATSAPP_URL = "https://wa.me/905415478141?text=" + encodeURIComponent(
-  "Merhaba, Privy Co-Location Makinesi hakkında bilgi almak istiyorum."
+  "Merhaba, Privy Co-Location Yazılımı hakkında bilgi almak istiyorum."
 );
 
 export default function WhatsAppButton() {
