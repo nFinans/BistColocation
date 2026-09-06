@@ -31,7 +31,7 @@ export default function Hero({ onCheckout }) {
           data-testid="hero-badge"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#facc15] dot-pulse" />
-          NEURAL ALGO v2.0 · MİKROSANİYE HIZ · BIST CO-LOCATION
+          NEURAL ALGO v2.0 · MİKROSANİYE HIZ · BIST CO-LOCATION YAZILIMI
         </div>
 
         <h1
@@ -46,11 +46,11 @@ export default function Hero({ onCheckout }) {
                 "linear-gradient(135deg, #a3e635 0%, #10b981 50%, #facc15 100%)",
             }}
           >
-            Niyetini Gör
+            Niyetini BIST Veri Analitiklerini Analiz Ederek Gör
           </span>
           ,<br className="hidden sm:block" />
-          Hareketi <span className="text-white">Saniyeler Önce</span>{" "}
-          <span style={{ color: "#facc15" }}>Yakala.</span>
+          Pİyasa Hareketlerini <span className="text-white">yüksek frekanlı yazılımlarla</span>{" "}
+          <span style={{ color: "#facc15" }}>Analiz Ederek Yakala.</span>
         </h1>
 
         <p
@@ -60,10 +60,10 @@ export default function Hero({ onCheckout }) {
         >
           Privy Neural Algo'nun karmaşık veri analitiğini, Borsa İstanbul'a
           en yakın veri merkezlerinde doğrudan{" "}
-          <span className="text-white font-semibold">Co-Location Makinesi</span>{" "}
+          <span className="text-white font-semibold">Co-Location Makinesi Yazılımı</span>{" "}
           üzerinde çalıştırın. Gecikme süresini{" "}
           <span className="text-[#a3e635] font-semibold">sıfıra</span> indirin,
-          kurumsal oyuncuların önüne geçin.
+          kurumsal hıza ve veri analizine sahip olun.
         </p>
 
         <div
@@ -76,11 +76,11 @@ export default function Hero({ onCheckout }) {
             className="cta-shine btn-primary text-base sm:text-lg"
           >
             <Zap className="w-5 h-5" />
-            CO-LOCATION ERİŞİMİ AL
+            CO-LOCATION YAZILIM HİZMETİ AL
             <ChevronRight className="w-5 h-5" />
           </button>
           <a href="#krallar" data-testid="hero-cta-secondary" className="btn-ghost">
-            PERFORMANSI GÖR
+           ÖRNEK PERFORMANSI GÖR
           </a>
         </div>
 
@@ -92,7 +92,7 @@ export default function Hero({ onCheckout }) {
           <MiniStat icon={Gauge} label="GECİKME" value="< 1ms" accent="#a3e635" />
           <MiniStat icon={Server} label="UPTIME" value="99.99%" accent="#facc15" />
           <MiniStat icon={Cpu} label="VERİ İŞLEME" value="1M+ tick/sn" accent="#10b981" />
-          <MiniStat icon={Zap} label="EMIR HIZI" value="Mikrosaniye" accent="#f5c518" />
+          <MiniStat icon={Zap} label="EMIR İLETİM HIZI" value="Mikrosaniye" accent="#f5c518" />
         </div>
       </div>
 
