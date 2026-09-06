@@ -2,6 +2,7 @@ from fastapi import FastAPI, APIRouter, HTTPException
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
+from supabase import create_client, Client
 import os
 import logging
 from pathlib import Path
@@ -13,10 +14,15 @@ from datetime import datetime, timezone
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
+# MongoDB connection (Orijinal status_checks için)
 mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ.get('DB_NAME', 'privyalgo')]
+
+# Supabase connection (Ödemeler ve Siparişler için)
+supabase_url: str = os.environ.get("SUPABASE_URL", "")
+supabase_key: str = os.environ.get("SUPABASE_KEY", "")
+supabase: Client = create_client(supabase_url, supabase_key)
 
 app = FastAPI()
 api_router = APIRouter(prefix="/api")
@@ -52,13 +58,24 @@ async def root():
 @api_router.post("/payment/initialize-link")
 async def initialize_link_payment(data: ColocationOrderRequest):
     try:
-        # Form verilerini MongoDB'ye kaydediyoruz
-        order_doc = data.model_dump()
-        order_doc["created_at"] = datetime.now(timezone.utc).isoformat()
-        order_doc["payment_status"] = "Ödeme Bekleniyor (Link)"
-        order_doc["order_id"] = f"COLO-{uuid.uuid4().hex[:8]}"
+        # Form verilerini doğrudan SUPABASE'e 'orders' tablosuna kaydediyoruz
+        order_data = {
+            "order_id": f"COLO-{uuid.uuid4().hex[:8]}",
+            "name": data.name,
+            "surname": data.surname,
+            "email": data.email,
+            "gsmNumber": data.gsmNumber,
+            "planId": data.planId,
+            "planName": data.planName,
+            "price": data.price,
+            "terminal_username": data.username,
+            "terminal_password": data.password,
+            "payment_status": "Ödeme Bekleniyor (Link)",
+            "created_at": datetime.now(timezone.utc).isoformat()
+        }
         
-        await db.orders.insert_one(order_doc)
+        # Supabase kayıt işlemi
+        supabase.table("orders").insert(order_data).execute()
         
         # Kullanıcıyı statik İyzico linkine yönlendiriyoruz
         return {
@@ -66,7 +83,7 @@ async def initialize_link_payment(data: ColocationOrderRequest):
             "paymentPageUrl": "https://iyzi.link/AKubUw"
         }
     except Exception as e:
-        logger.error(f"Colocation Order Error: {str(e)}")
+        logger.error(f"Supabase Order Error: {str(e)}")
         raise HTTPException(status_code=500, detail="Sipariş kaydedilemedi, lütfen tekrar deneyin.")
 
 @api_router.post("/status", response_model=StatusCheck)
