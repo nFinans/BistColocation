@@ -4,19 +4,19 @@ import { Plus, Minus } from "lucide-react";
 const FAQS = [
   {
     q: "Co-Location Makinesi tam olarak nedir?",
-    a: "Borsa İstanbul'un veri merkezine fiziksel olarak en yakın noktada, sizin için özelleştirilmiş, Privy Neural Algo v2.0 önyüklü, izole bir fiziksel sunucudur. Emirleriniz ve veri akışınız mikrosaniye seviyesinde işlenir.",
+    a: "Borsa İstanbul'un veri merkezine fiziksel olarak en yakın noktada, sizin için özelleştirilmiş, Privy Neural Algo v2.0 yazılımı önyüklü, izole bir fiziksel sunucudur. Emirleriniz ve veri akışınız mikrosaniye seviyesinde işlenir.",
   },
   {
     q: "Kuruluma ne kadar sürede başlayabilirim?",
-    a: "Başvuru ve ödemenin ardından donanım tahsisi ve algoritma kurulumu genellikle 24–72 saat içinde tamamlanır. Süreç boyunca dedike bir destek hattı ile iletişimde kalırsınız.",
+    a: "Başvuru ve ödemenin ardından donanım tahsisi ve algoritmik yazılım kurulumu genellikle 24–72 saat içinde tamamlanır. Süreç boyunca özel bir sunucu ile iletişimde kalırsınız.",
   },
   {
     q: "Privy Neural Algo v2.0 neyi farklı yapar?",
-    a: "Klasik göstergeler yerine emir defteri yoğunluğu, akıllı para akışı, sentiment ve volatiliteyi birleştirerek TF AL / TF SAT, Hedge Wall, MaxBuy/MaxSell kümeleri üretir. Sinyaller gerçek zamanlıdır.",
+    a: "Klasik göstergeler yerine emir defteri yoğunluğu, akıllı para/likidite akışı, sentiment ve volatiliteyi birleştirerek algoritmik sinyaller, Hedge Wall, MaxBuy/MaxSell kümeleri üretir. Sinyaller gerçek zamanlıdır.",
   },
   {
     q: "Yatırım tavsiyesi midir?",
-    a: "Hayır. Privy bir analiz ve karar destek aracıdır. Sunulan veriler, sinyaller ve görselleştirmeler yatırım tavsiyesi olarak yorumlanmamalıdır. Tüm kararlar size aittir.",
+    a: "Hayır. Privy bir analiz ve karar destek aracıdır. Sunulan veriler, sinyaller ve görselleştirmeler yatırım tavsiyesi olarak yorumlanmamalıdır. Tüm kararlar algoritmik yazılımlara aittir.",
   },
   {
     q: "Sözleşme süresi ve iptal nasıl işliyor?",
