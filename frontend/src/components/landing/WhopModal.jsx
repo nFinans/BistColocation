@@ -10,7 +10,7 @@ const COUNTRY_CODES = [
 
 export default function WhopModal({ plan, onClose }) {
   // 🟢 COLOCATION CANLIYA GEÇİŞ ŞALTERİ 🟢
-  const IS_PAYMENT_ACTIVE = false;
+  const IS_PAYMENT_ACTIVE = true;
 
   const [formData, setFormData] = useState({
     name: "", surname: "", email: "", countryCode: "+90", manualCountryCode: "",
