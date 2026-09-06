@@ -4,7 +4,7 @@ import { Server, Cpu, Network, ShieldCheck, HardDrive, Clock } from "lucide-reac
 const SPECS = [
   {
     icon: Server,
-    title: "Co-Location Sunucu",
+    title: "Co-Location Sunucu Yazılımları",
     color: "#a3e635",
     items: [
       "Borsa İstanbul veri merkezine fiziksel yakınlık",
@@ -47,8 +47,8 @@ const SPECS = [
     title: "Kurulum & Algo",
     color: "#a3e635",
     items: [
-      "Privy Neural Algo v2.0 önyüklü",
-      "MS SQL & yüksek hızlı veri katmanı",
+      "Privy Neural Algo v2.0 önyüklü Yazılım",
+      "MS SQL & yüksek hızlı veri kaydetme katmanı",
       "Python / Flask trading stack",
     ],
   },
@@ -79,9 +79,9 @@ export default function Specs() {
           </span>
           <h2 className="mt-4 text-3xl sm:text-5xl font-bold text-white leading-tight">
             Kurumsal sınıf{" "}
-            <span style={{ color: "#facc15" }}>HFT donanımı</span>,
+            <span style={{ color: "#facc15" }}>Veri Analitik Yazılımı</span>,
             <br className="hidden sm:block" />
-            bireysel trader'a açıldı.
+            bireysel trader ve yatırımcılar için hazırlandı.
           </h2>
         </div>
 
