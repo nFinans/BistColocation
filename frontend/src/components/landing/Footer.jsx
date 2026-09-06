@@ -23,9 +23,9 @@ export default function Footer() {
           />
           <p className="mt-5 text-sm text-[#a0a4b0] max-w-md leading-relaxed">
             Privy Neural Algo, Borsa İstanbul hisseleri için kuantitatif
-            sinyaller üretir; Co-Location Makinesi ile bu sinyalleri mikrosaniye
-            seviyesinde çalıştırır. Yatırım tavsiyesi değildir; bağımsız karar
-            süreçlerinde yardımcı bir araçtır.
+            sinyaller üretir; Co-Location Makinesi yazılımı ile bu sinyaller mikrosaniye
+            seviyesinde çalıştırılır. Yatırım tavsiyesi değildir; bağımsız karar
+            süreçlerinde yardımcı bir algoritmik yazılımdır.
           </p>
         </div>
 
